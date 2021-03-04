@@ -1,5 +1,5 @@
 
-<button mat-flat-button color="accent" style="text-align:center" [routerLink]="['http://localhost:4200/customers']">ADD_CUSTOMERS</button>
+<button mat-raised-button color="accent" (click)="onCreate()">ADD_CUSTOMERS</button>
 <div style="margin-top:1vh">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
@@ -34,4 +34,4 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
 </div>
-      
+  

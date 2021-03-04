@@ -14,6 +14,10 @@ import {MatTableModule} from '@angular/material/table';
 import { OrdersComponent } from './orders/orders.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import { DialogboxComponent } from './dialogbox/dialogbox.component';
+import { FormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 @NgModule({
@@ -21,7 +25,8 @@ import {MatSelectModule} from '@angular/material/select';
     AppComponent,
     NavbarComponent,
     CustomersComponent,
-    OrdersComponent
+    OrdersComponent,
+    DialogboxComponent
   ],
   imports: [
     BrowserModule,
@@ -33,11 +38,14 @@ import {MatSelectModule} from '@angular/material/select';
     MatTabsModule,
     MatTableModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    FormsModule,
+    MatDialogModule
  
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  //entryComponents:[CustomersComponent]
 })
 export class AppModule { }

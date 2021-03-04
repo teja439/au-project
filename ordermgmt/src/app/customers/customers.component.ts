@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-customers',
@@ -14,9 +15,12 @@ export class CustomersComponent implements OnInit {
   ngOnInit(): void {
     
   }
+  onCreate()
+  {
 
-  
+  }
 }
+
 export interface PeriodicElement {
   name: string;
   position: number;
