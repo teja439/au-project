@@ -17,7 +17,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { DialogboxComponent } from './dialogbox/dialogbox.component';
 import { FormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -40,12 +40,13 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatFormFieldModule,
     MatSelectModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSidenavModule
  
 
   ],
   providers: [],
   bootstrap: [AppComponent],
-  //entryComponents:[CustomersComponent]
+  entryComponents:[DialogboxComponent]
 })
 export class AppModule { }

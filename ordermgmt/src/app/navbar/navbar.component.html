@@ -2,12 +2,32 @@
 <div style="margin-top: 3vh">
  <h1 style="text-align: center">Introdution</h1>
  
-<mat-tab-group mat-stretch-tabs>
+<!-- <mat-tab-group mat-stretch-tabs>
    
-    <mat-tab label="CUSTOMERS"  > <app-customers></app-customers> <app-dialogbox></app-dialogbox> </mat-tab>
+    <mat-tab label="CUSTOMERS"  > <app-customers></app-customers>  </mat-tab>
     <mat-tab label="ORDERS"> <app-orders></app-orders></mat-tab>
     <mat-tab label="SUPPLIERS" > Content 3 </mat-tab>
+    <mat-tab label="add" > <app-dialogbox></app-dialogbox> </mat-tab>
     
  </mat-tab-group>
-  </div>
+  </div> -->
+  <mat-sidenav-container class="example-container" >
+    <mat-sidenav mode="side" opened>
+        <ul>
+        <li> 
+        Customers
+        </li>
+        <li> 
+            Orders
+        </li>
+        <li> 
+            Suppliers
+        </li>
+    </ul>
+    </mat-sidenav>
+    <mat-sidenav-content>Main content</mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+</div>
   
